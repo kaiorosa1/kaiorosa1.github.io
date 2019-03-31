@@ -36,7 +36,11 @@ li {
   float: none; 
   margin-bottom: 10px; 
 }
-
+.profile-img{
+  width: 170px;
+  border-radius: 50%;
+  
+}
 .h2-style{
   display: flex;
   height: 200px;

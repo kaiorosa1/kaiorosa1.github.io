@@ -1,36 +1,3 @@
-body{
-  overflow-x: hidden;
-}
-section {
-  width: 100%;
-  height: 150vh;
-}
- 
-
-#main {
-  text-align: center;
-}
-
-#welcome-section {
-  color:	#ffffff;
-  width: 100%;
-  height: 100vh;
-  background-color: #3268b2;
-}
-.welcome-text {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-}
-.fab {
-  color:	#ffffff;
-}
-.profile-link{
-  margin: 20px;
-}
-
 @media screen and (max-width: 460px) {
  
   section {

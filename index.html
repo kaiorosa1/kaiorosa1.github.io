@@ -22,10 +22,10 @@
           </a>
       
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link active" style="background-color:#ff8906;">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" style="color:#0f0e17;">About</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link" style="color:#0f0e17;">Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" style="color:#0f0e17;">Contact</a></li>
           </ul>
         </header>
       </div>
@@ -33,7 +33,7 @@
       <main class="container">
         <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark" id="home">
           <div class="row">
-            <div class="col-md-6 px-0">
+            <div class="col-md-6 px-0" style="color: #fffffe;">
               <h1 class="display-4 fst-italic">Kaio Rosa</h1>
               <p class="lead my-3">A software developer who loves teaching and creating</p>
             </div>
@@ -47,22 +47,22 @@
           <div class="col-md-12">
             <div class="p-4 mb-3 fst-italic bg-light rounded">
               <h3 class="col-md-8 fst-italic border-bottom">About</h3>
-              <p class="mb-0">
+              <p class="mb-0 card-p">
                 Hello, I'm Kaio Rosa. I'm a web developer who loves teaching and creating.
                 What I love about coding is that the possibilities are endless, you can automate your home, create your own game or 
                 even your own business. 
-                Currently I've been using a lot of Angular and Node but I'm language agnostic. 
-                I see code as a tool to solve problems and I find solving problems very intriguing and that's what made want to be a software developer in the first place.
+                Currently I've been using the MEAN stack (MongoDB, Express, Angular and Node.js) but I'm language agnostic,
+                I see coding as a tool to solve problems and I find solving problems very intriguing and that's what made me want to become a software developer in the first place.
 
               </p>
-              <p> When I'm not coding I'm recording videos, reading or playing Sudoku on my phone.</p>
+              <p class="card-p">When I'm not coding, I'm recording Youtube videos, reading or playing Sudoku on my phone.</p>
 
-              <p>Some fun facts about me:</p>
-               <ul>
+              <p class="card-p">Some fun facts about me:</p>
+               <ul class="card-p">
                  <li>I have a twin sister.</li>
                  <li>I learned how to touch type in 2019.</li>
                  <li>I love learning languages. I can speak three languages fluently, English, Spanish and Portuguese, my native language. I'm learning French at the moment.</li>
-                 <li>I did 6 rounds of the 100 Days of Code Challenge</li>
+                 <li>I did 6 rounds of the 100 Days of Code Challenge.</li>
                </ul>
 
                <div>
@@ -76,7 +76,7 @@
           <div class="col-md-12">
             <div class="p-4 mb-3 fst-italic bg-light rounded">
               <h3 class="col-md-8 fst-italic border-bottom">Projects</h3>
-              <p class="mb-0">Most of my projects I coded just for fun in my free time. I choose a few projects I'm proud of: </p>
+              <p class="mb-0 card-p">Most of my projects I coded just for fun in my free time. I choose a few projects I'm proud of: </p>
             </div>
         </div>
 
@@ -86,30 +86,28 @@
             <div class="col-md-6">
               <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">Technologies used in it</strong>
-                  <h3 class="mb-0">Project 1</h3>
-                  <div class="mb-1 text-muted">---</div>
-                  <p class="card-text mb-auto">This is a summary of the project.</p>
-                  <a href="#" class="stretched-link">Github Repo</a>
+                  <strong class="d-inline-block mb-2 text-highlight">HTML, CSS, REACT, Bootstrap</strong>
+                  <h3 class="mb-0 headline-color">Robo Friends</h3>
+                  <div class="mb-1 text-muted">------</div>
+                  <p class="card-text mb-auto ">A very simple project where you can filter out robot cards</p>
+                  <a href="https://github.com/kaiorosa1/react-robo-friends" target="_blank" class="btn btn-primary stretched-link">Github Repo</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        
+                  <img src="images/coding-illustration.png" width="200" height="250" alt="computer programming">        
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-success">Technologies used in it</strong>
-                  <h3 class="mb-0">Project 2</h3>
+                  <strong class="d-inline-block mb-2 text-highlight">Technologies used in it</strong>
+                  <h3 class="mb-0  headline-color">Project 2</h3>
                   <div class="mb-1 text-muted">---</div>
                   <p class="mb-auto">This is a summary of the project.</p>
-                  <a href="#" class="stretched-link">Github Repo</a>
+                  <a href="#" class="btn btn-primary stretched-link">Github Repo</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        
+                  <img src="images/coding-illustration.png" width="200" height="250" alt="computer programming">        
                 </div>
               </div>
             </div>
@@ -118,30 +116,28 @@
             <div class="col-md-6">
               <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">Technologies used in it</strong>
-                  <h3 class="mb-0">Project 3</h3>
+                  <strong class="d-inline-block mb-2 text-highlight">Technologies used in it</strong>
+                  <h3 class="mb-0  headline-color">Project 3</h3>
                   <div class="mb-1 text-muted">---</div>
                   <p class="card-text mb-auto">This is a summary of the project.</p>
-                  <a href="#" class="stretched-link">Github Repo</a>
+                  <a href="#" class="btn btn-primary stretched-link">Github Repo</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        
+                  <img src="images/coding-illustration.png" width="200" height="250" alt="computer programming">
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-success">Technologies used in it</strong>
-                  <h3 class="mb-0">Project 4</h3>
+                  <strong class="d-inline-block mb-2 text-highlight">Technologies used in it</strong>
+                  <h3 class="mb-0  headline-color">Project 4</h3>
                   <div class="mb-1 text-muted">---</div>
                   <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="stretched-link">Github Repo</a>
+                  <a href="#" class="btn btn-primary stretched-link">Github Repo</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        
+                  <img src="images/coding-illustration.png" width="200" height="250" alt="computer programming">        
                 </div>
               </div>
             </div>

@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #home{
   height: 450px;
+  background-color: #232946 !important;
 }
 
 .contact-icons {
@@ -125,17 +126,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fab{
-  color:  #ff8906;
+  color:  #232946;
 }
 
-.btn,.btn:hover {
+.btn,.btn:hover,.btn:active,.btn:active:focus {
   border-style: none;
-  background-color: #ff8906;
+  background-color: #232946 !important;
 }
 
 #myphoto{
   display: flex;
-  width: 250px;
+  width: 200px;
   margin: 0 auto;
   border-radius: 150px;
   align-items: center;
@@ -148,10 +149,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-highlight {
-  color: #e53170;
+  color: #d4939d;
 }
 .headline-color {
-  color: #0f0e17;
+  color: #232946;
 }
 
 .bd-placeholder-img {

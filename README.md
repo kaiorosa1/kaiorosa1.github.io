@@ -10,4 +10,5 @@ Technologies used in it:
 
 * HTML
 * CSS
-* Bootstrap 5.0
+* JS
+* Bootstrap 5.x

@@ -1,239 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Kaio Rosa's Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Kaio Rosa</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Kaio Rosa - Full Stack Developer Portfolio" />
+    <meta name="author" content="Kaio Rosa" />
+    <title>Kaio Rosa | Full Stack Developer</title>
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Core CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+
+    <!-- Mobile Menu Toggle (Visible only on small screens) -->
+    <button class="menu-toggle d-lg-none" id="menuToggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sideNav">
+        <div class="sidebar-profile">
+            <div class="profile-img-container">
+                <!-- Fallback to a gradient if no profile image exists yet, but we have one from previous build -->
+                <img class="profile-img" src="assets/img/profile_new.jpg" alt="Kaio Rosa" onerror="this.src='https://ui-avatars.com/api/?name=Kaio+Rosa&background=0f172a&color=f8fafc&size=150'" />
+            </div>
+            <h2 class="sidebar-name text-primary">Kaio Rosa</h2>
+            <div class="sidebar-role">Full Stack Developer</div>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#impossible-list">Impossible List <i class="fas fa-star" style="color:var(--accent-primary); font-size: 0.8em; margin-left: 5px;"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- About Section -->
+        <section class="section animate-on-scroll" id="about">
+            <div class="content-wrapper">
+                <h1 class="hero-title mb-4">
+                    Hi, I'm <span class="text-gradient">Kaio</span>
+                </h1>
+                <div class="hero-subtitle mb-4">
+                    Full Stack Developer specializing in Node.js, Angular, and building scalable systems. | <a href="mailto:kaiosrosa@gmail.com" class="text-accent">kaiosrosa@gmail.com</a>
+                </div>
+                <p class="lead mb-4 description-text">
+                    I'm a seasoned Full Stack Developer with over 5 years of experience. I thrive on building scalable, efficient web applications from concept to deployment. I specialize in API integration, performance optimization, and clean architecture.
+                </p>
+                <p class="mb-5 description-text">
+                    Beyond coding, I mentor students in English, teach programming, and create educational content. I believe in continuous learning, open communication, and taking on complex challenges.
+                </p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/kaio-rosa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/kaiorosa1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://www.youtube.com/@KaioRosa" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section animate-on-scroll" id="experience">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="timeline">
+                <!-- Role 1: Luby -->
+                <div class="timeline-item glass-card mb-4">
+                    <div class="timeline-header flex-between">
+                        <h3 class="role-title">Full Stack Developer</h3>
+                        <span class="timeline-date">June 2025 - Present</span>
+                    </div>
+                    <div class="company-name mb-3 text-gradient">Luby</div>
+                    <ul class="achievements-list">
+                        <li>Improved system reliability and performance by redesigning the caching architecture, reducing server load.</li>
+                        <li>Enhanced maintainability and scalability by centralizing reusable logic across critical features.</li>
+                        <li>Increased UI performance through refactoring and optimized Angular change detection.</li>
+                        <li>Strengthened frontend data persistence by implementing robust offline storage mechanisms.</li>
+                    </ul>
+                    <div class="tech-stack mt-3">
+                        <span class="tech-badge">Angular 16+</span>
+                        <span class="tech-badge">NestJS</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Redis</span>
+                    </div>
+                </div>
+
+                <!-- Role 2: Capital Empreendedor -->
+                <div class="timeline-item glass-card mb-4">
+                    <div class="timeline-header flex-between">
+                        <h3 class="role-title">Full Stack Developer</h3>
+                        <span class="timeline-date">July 2021 - June 2025</span>
+                    </div>
+                    <div class="company-name mb-3 text-gradient">Capital Empreendedor</div>
+                    <ul class="achievements-list">
+                        <li>Increased productivity of operations team by 20% using effective CRM integration.</li>
+                        <li>Reduced processing time by 20% through automated document analysis.</li>
+                        <li>Led API integrations with multiple financial institutions to enhance credit approval efficiency by 50%.</li>
+                    </ul>
+                    <div class="tech-stack mt-3">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express</span>
+                        <span class="tech-badge">GCP</span>
+                        <span class="tech-badge">Firebase</span>
+                    </div>
+                </div>
+
+                <!-- Role 3: Motora.ai -->
+                <div class="timeline-item glass-card mb-4">
+                    <div class="timeline-header flex-between">
+                        <h3 class="role-title">Web Development Intern</h3>
+                        <span class="timeline-date">February 2020 - June 2021</span>
+                    </div>
+                    <div class="company-name mb-3 text-gradient">motora.ai</div>
+                    <ul class="achievements-list">
+                        <li>Reduced manual adjustments by 15% by standardizing real-time event tracking in Driver Analytics.</li>
+                        <li>Enhanced user engagement, raising feedback rates by 30% through real-time data visualization improvements.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section animate-on-scroll" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="glass-card mb-4">
+                    <h3 class="degree">Master's Degree, Computer Science</h3>
+                    <div class="institution text-gradient">Universidade Federal do Espírito Santo (UFES)</div>
+                    <div class="edu-date mt-2">October 2024 - December 2026</div>
+                </div>
+                
+                <div class="glass-card mb-4">
+                    <h3 class="degree">Bachelor's Degree, Computer Engineering</h3>
+                    <div class="institution text-gradient">Universidade Federal do Espírito Santo (UFES)</div>
+                    <div class="edu-date mt-2">February 2016 - August 2023</div>
+                </div>
+
+                <div class="glass-card mb-4">
+                    <h3 class="degree">Technician, Information Technology</h3>
+                    <div class="institution text-gradient">CEET Vasco Coutinho</div>
+                    <div class="edu-date mt-2">2017 - 2019</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section animate-on-scroll" id="skills">
+            <h2 class="section-title">Skills & Languages</h2>
+            
+            <div class="skills-container mb-5">
+                <h3 class="mb-3">Technologies</h3>
+                <div class="grid-layout">
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Angular 2+</span>
+                            <span class="tech-badge">NgRx</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">NestJS</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">Microservices</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Database & Cloud</h4>
+                        <div class="tech-stack">
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">GCP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages-container">
+                <h3 class="mb-3">Languages</h3>
+                <ul class="custom-list">
+                    <li><strong>Portuguese:</strong> Native</li>
+                    <li><strong>English:</strong> Advanced / Fluent</li>
+                    <li><strong>Spanish:</strong> Full Professional</li>
+                    <li><strong>French:</strong> Limited Working Proficiency</li>
                 </ul>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Kaio 
-                        <span class="text-primary">Rosa</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        A software developer who loves teaching and creating: 
-                        <a href="mailto:name@email.com">kaiosrosa@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">I'm a web developer who loves teaching and creating. What I love about coding is that the possibilities are endless, you can automate your home, create your own game or even your own business. Currently I've been using the MEAN stack (MongoDB, Express, Angular and Node.js) but I'm language agnostic, I see coding as a tool to solve problems and I find solving problems very intriguing and that's what made me want to become a software developer in the first place.</p>
-                    <p>Feel free to reach out to me in my socials!!</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/kaio-rosa-2a5340ba/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/kaiorosa1" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://twitter.com/Kaio_Rosa" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="https://www.youtube.com/channel/UCVjRRoFwJkVP50pYVXEv8lg" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Full Stack Developer</h3>
-                            <div class="subheading mb-3">Capital Empreendedor</div>
-                            <p>Main Activities: Analysis and coding third party API integration, testing and maintaining the
-                                product, code reviews on the front-end and on the back-end using technologies like: JavaScript,
-                                HTML, CSS, Angular 2+,Node.js, Express, MongoDB and Firebase.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2021 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer Intern</h3>
-                            <div class="subheading mb-3">Motora.ai</div>
-                            <p>Main Activities: Fixing bugs, implementing features on the front-end and on the back-end using
-                                technologies like: JavaScript, HTML, CSS, Angular 2+, Node.js, Express, MongoDB.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2020 - June 2021</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Federal University of Espirito Santo (UFES)</h3>
-                            <div class="subheading mb-3">Master's Degree</div>
-                            <div>Master’s Degree in Informatics</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2024 - December 2026</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Federal University of Espirito Santo (UFES)</h3>
-                            <div class="subheading mb-3">Bachelor's Degree</div>
-                            <div>Computer Engineering </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2016 - August 2023</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">CEET Vasco Coutinho</h3>
-                            <div class="subheading mb-3">Computer Technician</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2017 - July 2019</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                       
-                        
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p class="card-p">When I'm not coding, I'm recording Youtube videos, reading or playing Sudoku on my phone.</p>
+        </section>
 
-                    <p class="card-p">Some fun facts about me:</p>
-                     <ul class="card-p">
-                       <li>I have a twin sister.</li>
-                       <li>I learned how to touch type in 2019.</li>
-                       <li>I love learning languages. I can speak three languages fluently, English, Spanish and Portuguese, my native language. I'm learning French at the moment.</li>
-                       <li>I did 6 rounds of the 100 Days of Code Challenge.</li>
-                     </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="row mb-4">
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-body d-flex flex-column text-center">
-                                    <strong class="d-inline-block mb-2 text-highlight">Node.js, Express, SQlite, Jest, Swagger</strong>
-                                    <div class="col-auto d-none d-lg-block">
-                                        <img src="assets/img/coding-illustration.png" width="200" height="200" alt="computer programming">        
-                                    </div>
-                                    <h3 class="mb-0 headline-color">Exercise Tracker API</h3>
-                                    <div class="mb-1 text-muted">------</div>
-                                    <p class="card-text mb-auto">A project where you can log your exercises</p>
-                                            
-                                    <a href="https://github.com/kaiorosa1/exercise-tracker-api" target="_blank" class="btn btn-primary mt-3">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-body d-flex flex-column text-center">
-                                    <strong class="d-inline-block mb-2 text-highlight">HTML, CSS, REACT</strong>
-                                    <div class="col-auto d-none d-lg-block">
-                                        <img src="assets/img/coding-illustration.png" width="200" height="200" alt="computer programming">        
-                                    </div>
-                                    <h3 class="mb-0 headline-color">The Random Quote Machine</h3>
-                                    <div class="mb-1 text-muted">---</div>
-                                    <p class="card-text mb-auto">A project done for the freeCodeCamp Front End Libraries Certification.</p>
-                                    <a href="https://github.com/kaiorosa1/random-quote-machine-fcc" target="_blank" class="btn btn-primary mt-3">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Projects Section -->
+        <section class="section animate-on-scroll" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                
+                <div class="glass-card project-card">
+                    <h3 class="project-title text-gradient">Exercise Tracker API</h3>
+                    <div class="tech-stack mt-2 mb-3">
+                        <span class="tech-badge sm">Node.js</span>
+                        <span class="tech-badge sm">Express</span>
+                        <span class="tech-badge sm">SQLite</span>
                     </div>
-                    <div class="row mb-2">
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-body d-flex flex-column text-center">
-                                    <strong class="d-inline-block mb-2 text-highlight">C</strong>
-                                    <div class="col-auto d-none d-lg-block">
-                                        <img src="assets/img/coding-illustration.png" width="200" height="200" alt="computer programming">        
-                                    </div>
-                                    <h3 class="mb-0 headline-color">Campo Minado</h3>
-                                    <div class="mb-1 text-muted">---</div>
-                                    <p class="card-text mb-auto">A project redone from my introductory programming class which functions like the game minesweeper.</p>
-                                    <a href="https://github.com/kaiorosa1/campo-minado" target="_blank" class="btn btn-primary mt-3">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-body d-flex flex-column text-center">
-                                    <strong class="d-inline-block mb-2 text-highlight">Java</strong>
-                                    <div class="col-auto d-none d-lg-block">
-                                        <img src="assets/img/coding-illustration.png" width="200" height="200" alt="computer programming">        
-                                    </div>
-                                    <h3 class="mb-0 headline-color">Credenciamento PPGI</h3>
-                                    <div class="mb-1 text-muted">---</div>
-                                    <p class="card-text mb-auto">A project where the user can register professors in an adapted UFES Grad program.</p>
-                                    <a href="https://github.com/kaiorosa1/credenciamento-ppgi-java" target="_blank" class="btn btn-primary mt-3">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="project-desc">A backend project where users can seamlessly log and track their daily exercises using robust API endpoints.</p>
+                    <a href="https://github.com/kaiorosa1/exercise-tracker-api" target="_blank" class="btn btn-primary mt-3">View Repository</a>
                 </div>
-            </section>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+                <div class="glass-card project-card">
+                    <h3 class="project-title text-gradient">Random Quote Machine</h3>
+                    <div class="tech-stack mt-2 mb-3">
+                        <span class="tech-badge sm">React</span>
+                        <span class="tech-badge sm">HTML/CSS</span>
+                    </div>
+                    <p class="project-desc">An interactive frontend application built as part of the freeCodeCamp Front End Libraries Certification to generate inspirational quotes.</p>
+                    <a href="https://github.com/kaiorosa1/random-quote-machine-fcc" target="_blank" class="btn btn-primary mt-3">View Repository</a>
+                </div>
+
+                <div class="glass-card project-card">
+                    <h3 class="project-title text-gradient">Credenciamento PPGI</h3>
+                    <div class="tech-stack mt-2 mb-3">
+                        <span class="tech-badge sm">Java</span>
+                    </div>
+                    <p class="project-desc">A robust Java-based collegiate system for registering professors within the adapted UFES Graduate Program workflow.</p>
+                    <a href="https://github.com/kaiorosa1/credenciamento-ppgi-java" target="_blank" class="btn btn-primary mt-3">View Repository</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Impossible List Section -->
+        <section class="section animate-on-scroll" id="impossible-list">
+            <h2 class="section-title">Impossible List</h2>
+            <p class="lead mb-5">An ever-evolving list of epic goals I want to achieve in my life. It's not just a bucket list; it's a list of things I actively want to tackle and update over time.</p>
+            
+            <div class="impossible-grid">
+                
+                <div class="glass-card list-category">
+                    <h3 class="category-title"><i class="fas fa-laptop-code text-gradient mr-2"></i> Professional & Skills</h3>
+                    <ul class="checklist">
+                        <li>Complete my Master's Degree in Computer Science</li>
+                        <li>Contribute significantly to an open-source tool</li>
+                        <li>Speak at a major developer conference</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card list-category">
+                    <h3 class="category-title"><i class="fas fa-language text-gradient mr-2"></i> Languages & Learning</h3>
+                    <ul class="checklist">
+                        <li>Reach conversational fluency in French</li>
+                        <li>Complete a 100 Days of Code challenge (completed 6 rounds!)</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card list-category">
+                    <h3 class="category-title"><i class="fas fa-heartbeat text-gradient mr-2"></i> Health & Fitness</h3>
+                    <ul class="checklist">
+                        <li>Run a half-marathon</li>
+                        <li>Learn how to do a muscle-up</li>
+                        <li>Consistently meditate for 30 consecutive days</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 </html>

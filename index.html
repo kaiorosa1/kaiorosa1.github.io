@@ -1,91 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-lang="pt">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Kaio Rosa - Full Stack Developer Portfolio" />
+    <meta name="description" id="metaDescription" data-desc-pt="Kaio Rosa — Portfólio de Full Stack Developer" data-desc-en="Kaio Rosa — Full Stack Developer Portfolio" content="Kaio Rosa — Portfólio de Full Stack Developer" />
     <meta name="author" content="Kaio Rosa" />
     <title>Kaio Rosa | Full Stack Developer</title>
-    <!-- Font Awesome icons -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Core CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 
-    <!-- Mobile Menu Toggle (Visible only on small screens) -->
-    <button class="menu-toggle d-lg-none" id="menuToggle" aria-label="Toggle Menu">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
         <i class="fas fa-bars"></i>
     </button>
 
-    <!-- Sidebar Navigation -->
     <nav class="sidebar" id="sideNav">
         <div class="sidebar-profile">
             <div class="profile-img-container">
-                <!-- Fallback to a gradient if no profile image exists yet, but we have one from previous build -->
-                <img class="profile-img" src="assets/img/profile_new.jpg" alt="Kaio Rosa" onerror="this.src='https://ui-avatars.com/api/?name=Kaio+Rosa&background=0f172a&color=f8fafc&size=150'" />
+                <img class="profile-img" src="assets/img/profile_new.jpg" alt="Kaio Rosa" onerror="this.src='https://ui-avatars.com/api/?name=Kaio+Rosa&background=b8552f&color=fff8f2&size=150'" />
             </div>
-            <h2 class="sidebar-name text-primary">Kaio Rosa</h2>
+            <h2 class="sidebar-name">Kaio Rosa</h2>
             <div class="sidebar-role">Full Stack Developer</div>
+            <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+                <button type="button" data-lang-btn="pt" aria-pressed="true">PT</button>
+                <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+            </div>
         </div>
-        
+
         <ul class="nav-menu">
-            <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#impossible-list">Impossible List <i class="fas fa-star" style="color:var(--accent-primary); font-size: 0.8em; margin-left: 5px;"></i></a></li>
+            <li class="nav-item"><a class="nav-link active" href="#about"><span data-i18n-lang="pt">Sobre</span><span data-i18n-lang="en">About</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience"><span data-i18n-lang="pt">Experiência</span><span data-i18n-lang="en">Experience</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#education"><span data-i18n-lang="pt">Formação</span><span data-i18n-lang="en">Education</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills"><span data-i18n-lang="pt">Habilidades</span><span data-i18n-lang="en">Skills</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects"><span data-i18n-lang="pt">Projetos</span><span data-i18n-lang="en">Projects</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#services"><span data-i18n-lang="pt">Serviços</span><span data-i18n-lang="en">Services</span></a></li>
         </ul>
+
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/kaio-rosa/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/kaiorosa1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="https://www.youtube.com/@KaioRosa" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="social-icon" href="mailto:kaiosrosa@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="main-content">
-        
-        <!-- About Section -->
+
         <section class="section animate-on-scroll" id="about">
             <div class="content-wrapper">
                 <h1 class="hero-title mb-4">
-                    Hi, I'm <span class="text-gradient">Kaio</span>
+                    <span data-i18n-lang="pt">Olá, eu sou</span><span data-i18n-lang="en">Hi, I'm</span> <span class="text-accent">Kaio</span>
                 </h1>
-                <div class="hero-subtitle mb-4">
-                    Full Stack Developer specializing in Node.js, Angular, and building scalable systems. | <a href="mailto:kaiosrosa@gmail.com" class="text-accent">kaiosrosa@gmail.com</a>
-                </div>
-                <p class="lead mb-4 description-text">
-                    I'm a seasoned Full Stack Developer with over 5 years of experience. I thrive on building scalable, efficient web applications from concept to deployment. I specialize in API integration, performance optimization, and clean architecture.
+                <p class="hero-subtitle mb-4">
+                    <span data-i18n-lang="pt">Full Stack Developer com mais de 5 anos de experiência, atuando com Angular, TypeScript, Node.js e NestJS. <a href="mailto:kaiosrosa@gmail.com" class="text-accent">kaiosrosa@gmail.com</a></span>
+                    <span data-i18n-lang="en">Full Stack Developer with 5+ years of experience, working with Angular, TypeScript, Node.js, and NestJS. <a href="mailto:kaiosrosa@gmail.com" class="text-accent">kaiosrosa@gmail.com</a></span>
                 </p>
-                <p class="mb-5 description-text">
-                    Beyond coding, I mentor students in English, teach programming, and create educational content. I believe in continuous learning, open communication, and taking on complex challenges.
+                <p class="mb-4 description-text">
+                    <span data-i18n-lang="pt">Atuo no desenvolvimento e evolução de aplicações web front-end e back-end, com experiência em gerenciamento de estado, cache, integrações via API e otimização de performance. Atualmente integro um time internacional responsável por sistemas corporativos de uma organização global Big Four de auditoria e serviços profissionais, enquanto curso mestrado em Informática.</span>
+                    <span data-i18n-lang="en">I build and evolve front-end and back-end web applications, with experience in state management, caching, API integrations, and performance optimization. I'm currently part of an international team supporting enterprise systems for a global Big Four audit and professional services organization, while pursuing a Master's degree in Informatics.</span>
                 </p>
-                <div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/in/kaio-rosa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/kaiorosa1" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://www.youtube.com/@KaioRosa" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
+                <p class="mb-0 description-text">
+                    <span data-i18n-lang="pt">Além do código, também dou aulas particulares de programação, atuo como mentor voluntário de inglês em uma ONG e crio conteúdo educacional.</span>
+                    <span data-i18n-lang="en">Beyond code, I also teach private programming lessons, volunteer as an English mentor at an NGO, and create educational content.</span>
+                </p>
             </div>
         </section>
 
-        <!-- Experience Section -->
         <section class="section animate-on-scroll" id="experience">
-            <h2 class="section-title">Experience</h2>
-            
+            <span class="eyebrow"><span data-i18n-lang="pt">Trajetória</span><span data-i18n-lang="en">Career path</span></span>
+            <h2 class="section-title"><span data-i18n-lang="pt">Experiência</span><span data-i18n-lang="en">Experience</span></h2>
+
             <div class="timeline">
-                <!-- Role 1: Luby -->
-                <div class="timeline-item glass-card mb-4">
-                    <div class="timeline-header flex-between">
+                <div class="timeline-item">
+                    <div class="timeline-header flex-between mb-3">
                         <h3 class="role-title">Full Stack Developer</h3>
-                        <span class="timeline-date">June 2025 - Present</span>
+                        <span class="timeline-date"><span data-i18n-lang="pt">jun/2025 — presente</span><span data-i18n-lang="en">Jun 2025 — present</span></span>
                     </div>
-                    <div class="company-name mb-3 text-gradient">Luby</div>
-                    <p class="description-text mb-3">Part of an international engineering team modernizing a legacy enterprise platform for a global Big Four audit and professional services firm.</p>
-                    <ul class="achievements-list">
-                        <li>Redesigned a multi-layer caching architecture (memory → Redis → database) using the Strategy pattern to handle multiple entity types, reducing server load and improving response times.</li>
-                        <li>Introduced NgRx state management combining Component Store and Global Store, improving state predictability and debugging across complex flows.</li>
-                        <li>Applied the Factory pattern to the core table component to centralize creation of its many variants, improving performance through optimized change detection.</li>
-                        <li>Migrated client-side persistence from LocalStorage to IndexedDB, strengthening offline support and data reliability.</li>
-                        <li>Built an internal cross-team file-exchange workflow end-to-end — dashboard, file generation, a mock service to unblock integration testing ahead of a dependent team's delivery, a scheduled reprocessing job, and an access-control view — coordinated across 3+ dependent teams.</li>
+                    <div class="company-name mb-3">Luby</div>
+                    <p class="mb-3 description-text">
+                        <span data-i18n-lang="pt">Atuo em um time internacional de engenharia responsável pela evolução e manutenção de aplicações corporativas para uma empresa global Big Four de auditoria e serviços profissionais.</span>
+                        <span data-i18n-lang="en">Part of an international engineering team modernizing enterprise applications for a global Big Four audit and professional services firm.</span>
+                    </p>
+                    <ul class="achievements-list mb-3">
+                        <li><span data-i18n-lang="pt">Redesenhei a arquitetura de cache (memória → Redis → banco) com o padrão Strategy, reduzindo requisições redundantes e melhorando os tempos de resposta.</span><span data-i18n-lang="en">Redesigned a multi-layer caching architecture (memory → Redis → database) using the Strategy pattern, reducing redundant requests and improving response times.</span></li>
+                        <li><span data-i18n-lang="pt">Introduzi gerenciamento de estado com NgRx (Component Store e Global Store), aumentando a previsibilidade e facilitando o debugging.</span><span data-i18n-lang="en">Introduced NgRx state management (Component Store and Global Store), improving predictability and debugging across complex flows.</span></li>
+                        <li><span data-i18n-lang="pt">Apliquei o padrão Factory no componente principal de tabela para centralizar a criação de suas variantes, melhorando a performance via change detection otimizado.</span><span data-i18n-lang="en">Applied the Factory pattern to the core table component to centralize creation of its variants, improving performance through optimized change detection.</span></li>
+                        <li><span data-i18n-lang="pt">Migrei a persistência no cliente de LocalStorage para IndexedDB, fortalecendo o suporte offline.</span><span data-i18n-lang="en">Migrated client-side persistence from LocalStorage to IndexedDB, strengthening offline support.</span></li>
+                        <li><span data-i18n-lang="pt">Construí, de ponta a ponta, um fluxo interno de troca de arquivos entre times — dashboard, geração de arquivo, um serviço mock para destravar testes antes da entrega de um time dependente, job agendado e uma tela de controle de acesso — coordenado entre 3+ times.</span><span data-i18n-lang="en">Built an internal cross-team file-exchange workflow end-to-end — dashboard, file generation, a mock service to unblock testing ahead of a dependent team's delivery, a scheduled job, and an access-control view — coordinated across 3+ teams.</span></li>
                     </ul>
-                    <div class="tech-stack mt-3">
+                    <div class="tech-stack">
                         <span class="tech-badge">Angular 16+</span>
                         <span class="tech-badge">NgRx</span>
                         <span class="tech-badge">NestJS</span>
@@ -94,19 +100,18 @@
                     </div>
                 </div>
 
-                <!-- Role 2: Capital Empreendedor (promoted) -->
-                <div class="timeline-item glass-card mb-4">
-                    <div class="timeline-header flex-between">
+                <div class="timeline-item">
+                    <div class="timeline-header flex-between mb-3">
                         <h3 class="role-title">Full Stack Developer</h3>
-                        <span class="timeline-date">November 2022 - June 2025</span>
+                        <span class="timeline-date"><span data-i18n-lang="pt">nov/2022 — jun/2025</span><span data-i18n-lang="en">Nov 2022 — Jun 2025</span></span>
                     </div>
-                    <div class="company-name mb-3 text-gradient">Capital Empreendedor</div>
-                    <ul class="achievements-list">
-                        <li>Increased operations team productivity by 20% by integrating CRM workflows into internal systems.</li>
-                        <li>Reduced manual workflow tasks by 30% by automating customer categorization.</li>
-                        <li>Reduced document-processing time by 20% through automated document analysis.</li>
+                    <div class="company-name mb-3">Capital Empreendedor</div>
+                    <ul class="achievements-list mb-3">
+                        <li><span data-i18n-lang="pt">Aumentei em 20% a produtividade da equipe de operações ao integrar fluxos do CRM aos sistemas internos.</span><span data-i18n-lang="en">Increased operations team productivity by 20% by integrating CRM workflows into internal systems.</span></li>
+                        <li><span data-i18n-lang="pt">Reduzi em 30% as tarefas manuais do fluxo operacional por meio da categorização automática de clientes.</span><span data-i18n-lang="en">Reduced manual workflow tasks by 30% by automating customer categorization.</span></li>
+                        <li><span data-i18n-lang="pt">Reduzi em 20% o tempo de processamento de documentos com a automação da análise documental.</span><span data-i18n-lang="en">Reduced document-processing time by 20% through automated document analysis.</span></li>
                     </ul>
-                    <div class="tech-stack mt-3">
+                    <div class="tech-stack">
                         <span class="tech-badge">Angular</span>
                         <span class="tech-badge">Node.js</span>
                         <span class="tech-badge">Express</span>
@@ -115,18 +120,17 @@
                     </div>
                 </div>
 
-                <!-- Role 2b: Capital Empreendedor (junior, before promotion) -->
-                <div class="timeline-item glass-card mb-4">
-                    <div class="timeline-header flex-between">
-                        <h3 class="role-title">Junior Full Stack Developer</h3>
-                        <span class="timeline-date">July 2021 - November 2022</span>
+                <div class="timeline-item">
+                    <div class="timeline-header flex-between mb-3">
+                        <h3 class="role-title"><span data-i18n-lang="pt">Full Stack Developer Júnior</span><span data-i18n-lang="en">Junior Full Stack Developer</span></h3>
+                        <span class="timeline-date"><span data-i18n-lang="pt">jul/2021 — nov/2022</span><span data-i18n-lang="en">Jul 2021 — Nov 2022</span></span>
                     </div>
-                    <div class="company-name mb-3 text-gradient">Capital Empreendedor</div>
-                    <ul class="achievements-list">
-                        <li>Improved credit approval efficiency by 50% through API integrations built with Angular, Node.js, and GCP.</li>
-                        <li>Reduced manual partner data requests by 25% by building an external API with GCP services.</li>
+                    <div class="company-name mb-3">Capital Empreendedor</div>
+                    <ul class="achievements-list mb-3">
+                        <li><span data-i18n-lang="pt">Aumentei em 50% a eficiência do processo de aprovação de crédito por meio de integrações via API com Angular, Node.js e GCP.</span><span data-i18n-lang="en">Improved credit approval efficiency by 50% through API integrations built with Angular, Node.js, and GCP.</span></li>
+                        <li><span data-i18n-lang="pt">Reduzi em 25% as solicitações manuais de dados de parceiros ao construir uma API externa com serviços do GCP.</span><span data-i18n-lang="en">Reduced manual partner data requests by 25% by building an external API with GCP services.</span></li>
                     </ul>
-                    <div class="tech-stack mt-3">
+                    <div class="tech-stack">
                         <span class="tech-badge">Angular</span>
                         <span class="tech-badge">Node.js</span>
                         <span class="tech-badge">Express</span>
@@ -134,182 +138,186 @@
                     </div>
                 </div>
 
-                <!-- Role 3: Motora.ai -->
-                <div class="timeline-item glass-card mb-4">
-                    <div class="timeline-header flex-between">
-                        <h3 class="role-title">Web Development Intern</h3>
-                        <span class="timeline-date">February 2020 - June 2021</span>
+                <div class="timeline-item">
+                    <div class="timeline-header flex-between mb-3">
+                        <h3 class="role-title"><span data-i18n-lang="pt">Estagiário de Desenvolvimento Web</span><span data-i18n-lang="en">Web Development Intern</span></h3>
+                        <span class="timeline-date"><span data-i18n-lang="pt">fev/2020 — jun/2021</span><span data-i18n-lang="en">Feb 2020 — Jun 2021</span></span>
                     </div>
-                    <div class="company-name mb-3 text-gradient">motora.ai</div>
+                    <div class="company-name mb-3">motora.ai</div>
                     <ul class="achievements-list">
-                        <li>Reduced manual adjustments by 15% by standardizing real-time event tracking in Driver Analytics.</li>
-                        <li>Enhanced user engagement, raising feedback rates by 30% through real-time data visualization improvements.</li>
+                        <li><span data-i18n-lang="pt">Reduzi em 15% a necessidade de ajustes manuais ao padronizar o rastreamento de eventos em tempo real no módulo Driver Analytics.</span><span data-i18n-lang="en">Reduced manual adjustments by 15% by standardizing real-time event tracking in the Driver Analytics module.</span></li>
+                        <li><span data-i18n-lang="pt">Aumentei em 30% a taxa de feedback dos usuários por meio de melhorias na visualização de dados em tempo real.</span><span data-i18n-lang="en">Increased user feedback rates by 30% by improving real-time data visualization.</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
         <section class="section animate-on-scroll" id="education">
-            <h2 class="section-title">Education</h2>
+            <span class="eyebrow"><span data-i18n-lang="pt">Formação acadêmica</span><span data-i18n-lang="en">Academic background</span></span>
+            <h2 class="section-title"><span data-i18n-lang="pt">Formação</span><span data-i18n-lang="en">Education</span></h2>
             <div class="education-grid">
-                <div class="glass-card mb-4">
-                    <h3 class="degree">Master's Degree, Informatics — Ontologies</h3>
-                    <div class="institution text-gradient">Universidade Federal do Espírito Santo (UFES), PPGI</div>
-                    <div class="edu-date mt-2">October 2024 - December 2026</div>
+                <div class="glass-card">
+                    <h3 class="degree"><span data-i18n-lang="pt">Mestrado em Informática — Ontologias</span><span data-i18n-lang="en">Master's Degree, Informatics — Ontologies</span></h3>
+                    <div class="institution">UFES, PPGI</div>
+                    <div class="edu-date mt-2"><span data-i18n-lang="pt">out/2024 — dez/2026 (previsto)</span><span data-i18n-lang="en">Oct 2024 — Dec 2026 (expected)</span></div>
                 </div>
-                
-                <div class="glass-card mb-4">
-                    <h3 class="degree">Bachelor's Degree, Computer Engineering</h3>
-                    <div class="institution text-gradient">Universidade Federal do Espírito Santo (UFES)</div>
-                    <div class="edu-date mt-2">February 2016 - August 2023</div>
+                <div class="glass-card">
+                    <h3 class="degree"><span data-i18n-lang="pt">Bacharelado em Engenharia da Computação</span><span data-i18n-lang="en">Bachelor's Degree, Computer Engineering</span></h3>
+                    <div class="institution">UFES</div>
+                    <div class="edu-date mt-2"><span data-i18n-lang="pt">fev/2016 — ago/2023</span><span data-i18n-lang="en">Feb 2016 — Aug 2023</span></div>
                 </div>
-
-                <div class="glass-card mb-4">
-                    <h3 class="degree">Technician, Information Technology</h3>
-                    <div class="institution text-gradient">CEET Vasco Coutinho</div>
-                    <div class="edu-date mt-2">2017 - 2019</div>
+                <div class="glass-card">
+                    <h3 class="degree"><span data-i18n-lang="pt">Técnico em Informática</span><span data-i18n-lang="en">Technician, Information Technology</span></h3>
+                    <div class="institution">CEET Vasco Coutinho</div>
+                    <div class="edu-date mt-2">2017 — 2019</div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section class="section animate-on-scroll" id="skills">
-            <h2 class="section-title">Skills & Languages</h2>
-            
+            <span class="eyebrow"><span data-i18n-lang="pt">Caixa de ferramentas</span><span data-i18n-lang="en">Toolbox</span></span>
+            <h2 class="section-title"><span data-i18n-lang="pt">Habilidades &amp; Idiomas</span><span data-i18n-lang="en">Skills &amp; Languages</span></h2>
+
             <div class="skills-container mb-5">
-                <h3 class="mb-3">Technologies</h3>
                 <div class="grid-layout">
                     <div class="skill-category">
-                        <h4>Frontend</h4>
+                        <h4><span data-i18n-lang="pt">Frontend</span><span data-i18n-lang="en">Frontend</span></h4>
                         <div class="tech-stack">
-                            <span class="tech-badge">Angular 2+</span>
-                            <span class="tech-badge">NgRx</span>
+                            <span class="tech-badge">Angular</span>
                             <span class="tech-badge">TypeScript</span>
-                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">RxJS</span>
+                            <span class="tech-badge">NgRx</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Backend</h4>
+                        <h4><span data-i18n-lang="pt">Backend</span><span data-i18n-lang="en">Backend</span></h4>
                         <div class="tech-stack">
                             <span class="tech-badge">Node.js</span>
                             <span class="tech-badge">NestJS</span>
                             <span class="tech-badge">Express</span>
-                            <span class="tech-badge">Microservices</span>
+                            <span class="tech-badge"><span data-i18n-lang="pt">Microsserviços</span><span data-i18n-lang="en">Microservices</span></span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Database & Cloud</h4>
+                        <h4><span data-i18n-lang="pt">Dados &amp; Nuvem</span><span data-i18n-lang="en">Data &amp; Cloud</span></h4>
                         <div class="tech-stack">
                             <span class="tech-badge">MongoDB</span>
                             <span class="tech-badge">Redis</span>
-                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">IndexedDB</span>
                             <span class="tech-badge">GCP</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><span data-i18n-lang="pt">Testes</span><span data-i18n-lang="en">Testing</span></h4>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Jest</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="languages-container">
-                <h3 class="mb-3">Languages</h3>
+                <h4 class="mb-3"><span data-i18n-lang="pt">Idiomas</span><span data-i18n-lang="en">Languages</span></h4>
                 <ul class="custom-list">
-                    <li><strong>Portuguese:</strong> Native</li>
-                    <li><strong>English:</strong> Advanced / Fluent</li>
-                    <li><strong>Spanish:</strong> Full Professional</li>
-                    <li><strong>French:</strong> Limited Working Proficiency</li>
+                    <li><strong><span data-i18n-lang="pt">Português:</span><span data-i18n-lang="en">Portuguese:</span></strong> <span data-i18n-lang="pt">nativo</span><span data-i18n-lang="en">native</span></li>
+                    <li><strong><span data-i18n-lang="pt">Inglês:</span><span data-i18n-lang="en">English:</span></strong> <span data-i18n-lang="pt">fluente</span><span data-i18n-lang="en">fluent</span></li>
+                    <li><strong><span data-i18n-lang="pt">Espanhol:</span><span data-i18n-lang="en">Spanish:</span></strong> <span data-i18n-lang="pt">profissional</span><span data-i18n-lang="en">professional working proficiency</span></li>
+                    <li><strong><span data-i18n-lang="pt">Francês:</span><span data-i18n-lang="en">French:</span></strong> <span data-i18n-lang="pt">básico</span><span data-i18n-lang="en">limited working proficiency</span></li>
                 </ul>
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section class="section animate-on-scroll" id="projects">
-            <h2 class="section-title">Projects</h2>
+            <span class="eyebrow"><span data-i18n-lang="pt">Trabalho autoral</span><span data-i18n-lang="en">Independent work</span></span>
+            <h2 class="section-title"><span data-i18n-lang="pt">Projetos</span><span data-i18n-lang="en">Projects</span></h2>
             <div class="project-grid">
 
-                <div class="glass-card project-card project-featured">
-                    <h3 class="project-title text-gradient">TrainMemo — Workout Tracker</h3>
+                <div class="project-card project-featured">
+                    <h3 class="project-title">TrainMemo</h3>
                     <div class="tech-stack mt-2 mb-3">
                         <span class="tech-badge sm">Angular 21</span>
                         <span class="tech-badge sm">Signals</span>
                         <span class="tech-badge sm">NestJS</span>
                         <span class="tech-badge sm">MongoDB</span>
                     </div>
-                    <p class="project-desc">Local-first, mobile-first workout tracker, solo-built end to end (130 commits in 5 weeks) with a spec-driven process (specs, ADRs, decision log). Offline-first architecture with IndexedDB and optional cloud sync, multi-device conflict resolution (last-write-wins with soft-delete tombstones), and locale-independent data modeling.</p>
-                    <a href="https://kaiorosa1.github.io/train-memo-log" target="_blank" class="btn btn-primary mt-3">View Live App</a>
+                    <p class="project-desc">
+                        <span data-i18n-lang="pt">App de treino local-first, construído sozinho do início ao fim (130 commits em 5 semanas) com processo orientado a spec (specs, ADRs, decision log). Arquitetura offline-first com IndexedDB e sincronização opcional, resolução de conflito multi-dispositivo e modelagem de dados independente de idioma.</span>
+                        <span data-i18n-lang="en">Local-first workout tracker, solo-built end to end (130 commits in 5 weeks) with a spec-driven process (specs, ADRs, decision log). Offline-first architecture with IndexedDB and optional cloud sync, multi-device conflict resolution, and locale-independent data modeling.</span>
+                    </p>
+                    <a href="https://kaiorosa1.github.io/train-memo-log" target="_blank" class="btn btn-primary mt-3"><span data-i18n-lang="pt">Ver app ao vivo</span><span data-i18n-lang="en">View live app</span></a>
                 </div>
 
-                <div class="glass-card project-card">
-                    <h3 class="project-title text-gradient">Exercise Tracker API</h3>
+                <div class="project-card">
+                    <h3 class="project-title">Exercise Tracker API</h3>
                     <div class="tech-stack mt-2 mb-3">
                         <span class="tech-badge sm">Node.js</span>
                         <span class="tech-badge sm">Express</span>
                         <span class="tech-badge sm">SQLite</span>
                     </div>
-                    <p class="project-desc">A backend project where users can seamlessly log and track their daily exercises using robust API endpoints.</p>
-                    <a href="https://github.com/kaiorosa1/exercise-tracker-api" target="_blank" class="btn btn-primary mt-3">View Repository</a>
+                    <p class="project-desc">
+                        <span data-i18n-lang="pt">Projeto de backend para registrar e acompanhar exercícios diários por meio de endpoints de API.</span>
+                        <span data-i18n-lang="en">A backend project where users can log and track daily exercises through robust API endpoints.</span>
+                    </p>
+                    <a href="https://github.com/kaiorosa1/exercise-tracker-api" target="_blank" class="btn mt-3"><span data-i18n-lang="pt">Ver repositório</span><span data-i18n-lang="en">View repository</span></a>
                 </div>
 
-                <div class="glass-card project-card">
-                    <h3 class="project-title text-gradient">Random Quote Machine</h3>
+                <div class="project-card">
+                    <h3 class="project-title">Random Quote Machine</h3>
                     <div class="tech-stack mt-2 mb-3">
                         <span class="tech-badge sm">React</span>
                         <span class="tech-badge sm">HTML/CSS</span>
                     </div>
-                    <p class="project-desc">An interactive frontend application built as part of the freeCodeCamp Front End Libraries Certification to generate inspirational quotes.</p>
-                    <a href="https://github.com/kaiorosa1/random-quote-machine-fcc" target="_blank" class="btn btn-primary mt-3">View Repository</a>
+                    <p class="project-desc">
+                        <span data-i18n-lang="pt">Aplicação frontend interativa feita para a certificação Front End Libraries do freeCodeCamp.</span>
+                        <span data-i18n-lang="en">Interactive frontend application built for the freeCodeCamp Front End Libraries certification.</span>
+                    </p>
+                    <a href="https://github.com/kaiorosa1/random-quote-machine-fcc" target="_blank" class="btn mt-3"><span data-i18n-lang="pt">Ver repositório</span><span data-i18n-lang="en">View repository</span></a>
                 </div>
 
-                <div class="glass-card project-card">
-                    <h3 class="project-title text-gradient">Credenciamento PPGI</h3>
+                <div class="project-card">
+                    <h3 class="project-title">Credenciamento PPGI</h3>
                     <div class="tech-stack mt-2 mb-3">
                         <span class="tech-badge sm">Java</span>
                     </div>
-                    <p class="project-desc">A robust Java-based collegiate system for registering professors within the adapted UFES Graduate Program workflow.</p>
-                    <a href="https://github.com/kaiorosa1/credenciamento-ppgi-java" target="_blank" class="btn btn-primary mt-3">View Repository</a>
+                    <p class="project-desc">
+                        <span data-i18n-lang="pt">Sistema em Java para credenciamento de professores no fluxo do programa de pós-graduação da UFES.</span>
+                        <span data-i18n-lang="en">Java-based system for registering professors within UFES's graduate program workflow.</span>
+                    </p>
+                    <a href="https://github.com/kaiorosa1/credenciamento-ppgi-java" target="_blank" class="btn mt-3"><span data-i18n-lang="pt">Ver repositório</span><span data-i18n-lang="en">View repository</span></a>
                 </div>
 
             </div>
         </section>
 
-        <!-- Impossible List Section -->
-        <section class="section animate-on-scroll" id="impossible-list">
-            <h2 class="section-title">Impossible List</h2>
-            <p class="lead mb-5">An ever-evolving list of epic goals I want to achieve in my life. It's not just a bucket list; it's a list of things I actively want to tackle and update over time.</p>
-            
-            <div class="impossible-grid">
-                
-                <div class="glass-card list-category">
-                    <h3 class="category-title"><i class="fas fa-laptop-code text-gradient mr-2"></i> Professional & Skills</h3>
-                    <ul class="checklist">
-                        <li>Complete my Master's Degree in Informatics (Ontologies)</li>
-                        <li>Contribute significantly to an open-source tool</li>
-                        <li>Speak at a major developer conference</li>
-                    </ul>
+        <section class="section animate-on-scroll" id="services">
+            <span class="eyebrow"><span data-i18n-lang="pt">Trabalhe comigo</span><span data-i18n-lang="en">Work with me</span></span>
+            <h2 class="section-title"><span data-i18n-lang="pt">Serviços</span><span data-i18n-lang="en">Services</span></h2>
+            <p class="description-text mb-4">
+                <span data-i18n-lang="pt">Além do trabalho CLT, ofereço dois tipos de serviço como freelancer.</span>
+                <span data-i18n-lang="en">Alongside full-time work, I offer two kinds of freelance services.</span>
+            </p>
+            <div class="services-grid">
+                <div class="service-card consultoria">
+                    <h3><span data-i18n-lang="pt">Consultoria Técnica</span><span data-i18n-lang="en">Technical Consulting</span></h3>
+                    <p><span data-i18n-lang="pt">Ajudo times e founders a resolver problemas de arquitetura, performance e escala em Angular, Node.js e NestJS.</span><span data-i18n-lang="en">I help teams and founders solve architecture, performance, and scale problems in Angular, Node.js, and NestJS.</span></p>
+                    <a href="https://kaiorosa1.github.io/servicos/consultoria/" target="_blank" class="btn"><span data-i18n-lang="pt">Saiba mais</span><span data-i18n-lang="en">Learn more</span></a>
+                    <span class="service-lang-note block" data-i18n-lang="en">Page in Portuguese</span>
                 </div>
-
-                <div class="glass-card list-category">
-                    <h3 class="category-title"><i class="fas fa-language text-gradient mr-2"></i> Languages & Learning</h3>
-                    <ul class="checklist">
-                        <li>Reach conversational fluency in French</li>
-                        <li>Complete a 100 Days of Code challenge (completed 6 rounds!)</li>
-                    </ul>
+                <div class="service-card aulas">
+                    <h3><span data-i18n-lang="pt">Aulas Particulares</span><span data-i18n-lang="en">Private Lessons</span></h3>
+                    <p><span data-i18n-lang="pt">Aulas de programação online, do zero ao profissional — nota 4.9 no Superprof.</span><span data-i18n-lang="en">Online programming lessons, from zero to professional — 4.9★ on Superprof.</span></p>
+                    <a href="https://kaiorosa1.github.io/servicos/aulas/" target="_blank" class="btn"><span data-i18n-lang="pt">Saiba mais</span><span data-i18n-lang="en">Learn more</span></a>
+                    <span class="service-lang-note block" data-i18n-lang="en">Page in Portuguese</span>
                 </div>
-
-                <div class="glass-card list-category">
-                    <h3 class="category-title"><i class="fas fa-heartbeat text-gradient mr-2"></i> Health & Fitness</h3>
-                    <ul class="checklist">
-                        <li>Run a half-marathon</li>
-                        <li>Learn how to do a muscle-up</li>
-                        <li>Consistently meditate for 30 consecutive days</li>
-                    </ul>
-                </div>
-
             </div>
         </section>
+
+        <footer class="site-footer">
+            <p><span data-i18n-lang="pt">© 2026 Kaio Rosa. Vitória, ES — Brasil.</span><span data-i18n-lang="en">© 2026 Kaio Rosa. Vitória, ES — Brazil.</span></p>
+        </footer>
 
     </main>
 
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
 </html>

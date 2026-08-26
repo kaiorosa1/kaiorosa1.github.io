@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Language toggle (PT default, EN alternate) — persisted per viewer
+  const langButtons = document.querySelectorAll('[data-lang-btn]');
+  const metaDescription = document.getElementById('metaDescription');
+
+  function applyLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    langButtons.forEach((btn) => {
+      btn.setAttribute('aria-pressed', btn.getAttribute('data-lang-btn') === lang ? 'true' : 'false');
+    });
+    if (metaDescription) {
+      const key = lang === 'en' ? 'descEn' : 'descPt';
+      metaDescription.setAttribute('content', metaDescription.dataset[key]);
+    }
+    try { localStorage.setItem('kr-lang', lang); } catch (e) {}
+  }
+
+  let storedLang = 'pt';
+  try { storedLang = localStorage.getItem('kr-lang') || 'pt'; } catch (e) {}
+  applyLang(storedLang);
+
+  langButtons.forEach((btn) => {
+    btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang-btn')));
+  });
+
   // Intersection Observer for scroll animations
   const observerOptions = {
     root: null,

@@ -24,7 +24,10 @@ The home page is bilingual (Portuguese / English). Any element with two `data-i1
 by the language pill in the sidebar and persisted per-visitor in `localStorage`. Content outside
 this repo (linked service pages) is Portuguese-only, flagged inline where relevant.
 
-## Status
+## Design
 
-Visual design is a provisional direction, not a final brand identity — subject to a full visual
-redesign pass in the future.
+"Engineering Blueprint" direction: graph-paper background, hairline/2px borders, dimension-line
+connectors on the experience timeline, and a cyanotype-inspired palette (pale blue paper, navy
+ink, amber accent). Typefaces: Space Grotesk (display), IBM Plex Sans (body), IBM Plex Mono
+(labels, dates, tags). Dark mode keeps the same navy-toned concept rather than switching to a
+neutral dark theme.
